@@ -1,9 +1,7 @@
 // bubbleSort.js
 
-// Initialize an array with the specified numbers
 let numbers = [42, 25, 12, 63, 48, 10, 16, 5, 30, 78];
 
-// Function to add numbers to the array using prompt
 function addNumbers() {
     let moreNumbers = true;
     while (moreNumbers) {
@@ -22,7 +20,6 @@ function addNumbers() {
     }
 }
 
-// Bubble Sort function
 function bubbleSort(arr) {
     let n = arr.length;
     let swapped;
@@ -38,17 +35,15 @@ function bubbleSort(arr) {
                 console.log(`Swapped ${arr[i + 1]} and ${arr[i]}`);
             }
         }
-        n--; // Reduce the range of comparison
+        n--; 
     } while (swapped);
 }
 
-// Main function to run the program
 function main() {
-    addNumbers(); // Allow user to add numbers
+    addNumbers(); 
     console.log("Array before sorting:", numbers);
-    bubbleSort(numbers); // Sort the array
+    bubbleSort(numbers); 
     console.log("Sorted array:", numbers);
 }
 
-// Start the program
 main();
