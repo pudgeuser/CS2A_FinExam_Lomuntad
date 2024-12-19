@@ -2,44 +2,44 @@
 
 class Node {
     constructor(value) {
-        this.value = value; // Set the value of the node
-        this.next = null;   // Initialize the next node as null
+        this.value = value; 
+        this.next = null;   
     }
 }
 
 class LinkedList {
     constructor() {
-        this.head = null;   // Initialize the head of the list as null
-        this.size = 0;      // Initialize the size of the list as 0
+        this.head = null;   
+        this.size = 0;      
     }
 
     append(value) {
-        const newNode = new Node(value); // Create a new node with the given value
+        const newNode = new Node(value); 
 
         if (!this.head) {
-            this.head = newNode; // If the list is empty, set the new node as the head
+            this.head = newNode; 
         } else {
-            let current = this.head; // Start from the head
+            let current = this.head; 
             while (current.next) {
-                current = current.next; // Traverse to the end of the list
+                current = current.next;
             }
-            current.next = newNode; // Link the new node at the end
+            current.next = newNode;
         }
 
-        this.size++; // Increment the size of the list
-        this.print(); // Print the list after appending
+        this.size++;
+        this.print();
     }
 
     print() {
-        let current = this.head; // Start from the head
-        let result = []; // Array to hold the values for printing
+        let current = this.head; 
+        let result = []; 
 
         while (current) {
-            result.push(current.value); // Add the current node's value to the result array
-            current = current.next; // Move to the next node
+            result.push(current.value);
+            current = current.next; 
         }
 
-        console.log("Linked List:", result.join(" -> ")); // Print the linked list
+        console.log("Linked List:", result.join(" -> ")); 
     }
 }
 
