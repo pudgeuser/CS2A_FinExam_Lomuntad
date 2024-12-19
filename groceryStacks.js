@@ -36,15 +36,13 @@ for (let i = 0; i < 5; i++) {
   }
 }
 
-// Example of using pop()
 console.log("Popping an item:");
 pop();
 
 console.log("Popping another item:");
 pop();
 
-// Example of trying to pop from an empty stack
 console.log("Trying to pop from an empty stack:");
-// Clear the stack for demonstration
+
 groceryStack = [];
 pop();
