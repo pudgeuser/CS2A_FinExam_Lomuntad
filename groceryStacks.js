@@ -11,16 +11,16 @@ function peek() {
 }
 
 function push(item) {
-  console.log("Peeking before push:", peek()); // Invoke peek
+  console.log("Peeking before push:", peek()); 
   groceryStack.push(item);
   console.log("Current Stack:", groceryStack);
 }
 
 function pop() {
-  console.log("Peeking before pop:", peek()); // Invoke peek
+  console.log("Peeking before pop:", peek()); 
   if (groceryStack.length === 0) {
     console.log("Cannot pop from an empty stack.");
-    return; // Or throw an error if you prefer
+    return; 
   }
   groceryStack.pop();
   console.log("Current Stack:", groceryStack);
@@ -29,7 +29,7 @@ function pop() {
 // Get 5 grocery items using prompt()
 for (let i = 0; i < 5; i++) {
   let item = prompt(`Enter grocery item ${i + 1}:`);
-  if (item) { // Check if the user actually entered something
+  if (item) { 
     push(item);
   } else {
     console.log("No item entered. Skipping.");
